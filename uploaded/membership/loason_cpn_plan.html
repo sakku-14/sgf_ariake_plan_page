@@ -1,0 +1,307 @@
+    <style type="text/css"><!--
+      body {line-height: 120%;}
+       -->
+      </style>
+      <div class="telop-container">
+            <div class="autoplay-telop">
+              <div class="telop1"></div>
+              <div class="telop2"></div>
+              <div class="telop1"></div>
+              <div class="telop2"></div>
+              <div class="telop1"></div>
+              <div class="telop2"></div>
+              <div class="telop1"></div>
+              <div class="telop2"></div>
+            </div>
+          </div>
+          <style>
+            .telop-container {
+              height: 50px;
+              width: 66%;
+              display: -ms-grid;
+              -ms-grid-columns: min-content;
+              overflow: hidden;
+              box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.3),
+                0px -4px 2px -2px rgba(0, 0, 0, 0.3);
+              -webkit-box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.3),
+                0px -4px 2px -2px rgba(0, 0, 0, 0.3);
+              -moz-box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.3),
+                0px -4px 2px -2px rgba(0, 0, 0, 0.3);
+              margin: 15px 0;
+            }
+            .autoplay-telop {
+              display: flex;
+              width: min-content;
+              animation: 15s linear infinite autoTelop;
+            }
+            .telop1 {
+              height: 50px;
+              width: 400px;
+              background-image: url(https://asp.hotel-story.ne.jp/media/2646000100208.jpg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              margin: 20px;
+              position: relative;
+            }
+            .telop2 {
+              width: 400px;
+              margin: 20px;
+              position: relative;
+            }
+            @keyframes autoTelop {
+              from {
+                transform: translateX(0%);
+              }
+              to {
+                transform: translateX(-50%);
+              }
+            }
+          </style>
+      <div class="flag-container">
+        <div class="benefit-flag mem-only">会員限定</div>
+        <div class="benefit-flag sgreen pr-fl">PREMIUM FL 限定</div>
+        <div class="benefit-flag sgreen bf-pl">朝食付きプラン</div>
+        <div class="benefit-flag sgreen lt-out">12時チェックアウト</div>
+      </div>
+      <style>
+        .flag-container {
+          font-size: 12px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          width: 66%;
+        }
+        .benefit-flag {
+          margin-bottom:10px;
+          margin-right:4px;
+          padding:5%;
+          color:white;
+          border-radius:15px;
+          text-align:center;
+          font-weight:bold;
+        }
+        .sgreen {
+          background-color:#075a62;
+        }
+        .mem-only {
+          background-color:#FF0000;
+          opacity: 1;
+        }
+        .pr-fl {
+          opacity: 1;
+        }
+        .bf-pl {
+          opacity: 1;
+        }
+        .lt-out {
+          opacity: 1;
+        }
+      </style>
+      <br>
+      <div class="catch_copy_container_l">
+        <span>ホテル館内2階の「ローソン相鉄グランドフレッサ有明店」で使える<br>500円割引クーポン付きプランです。<br>
+        宿泊人数に関わらず1泊1室につき1枚の割引券をお渡しいたします。</span>
+      </div>
+      <div class="default-show-header_l">
+        <div class="text-header-container_l">
+          <div class="text-header-element_l">
+          クーポンご利用上の注意点
+          </div>
+        </div>
+        <div>
+          <p>
+          ・「ローソン相鉄グランドフレッサ有明」でのみ利用可能です。他のローソンではご利用できません。<br />
+          ・有効期間はチェックアウト日までとなります。<br />
+          ・ホテル発行印のないものは無効となります。<br />
+          ・返金不可、つり銭のお返しはできません。<br />
+          ・日程短縮の際は、クーポンをご返却いただきます。<br />
+          ・このプランのご予約には相鉄ホテルズクラブ会員登録が必要となります。
+          </p>
+        </div>
+      </div>
+      <div class="default-show-header_l">
+        <div class="text-header-container_l">
+          <div class="text-header-element_l">
+          お支払いできない商品
+          </div>
+        </div>
+        <div>
+          <p>
+          ①公共料金等の各種のお支払い<br />
+          ②Loppi取扱い商品・サービス<br />
+          ③プリペイドカード類（QUOカード、POSAカード等）<br />
+          ④タバコ・切手・はがき・印紙類・ゴミ処理券の金券類<br />
+          ⑤一部自治体の指定ごみ袋・電子マネーチャージ・コピーFAX
+          </p>
+        </div>
+      </div>
+      <div class="default-show-header_l">
+        <div class="text-header-container_l">
+          <div class="text-header-element_l">
+          朝食のご案内
+          </div>
+        </div>
+        <div>
+          <p>
+          営業時間：朝7：00～10：30（ラストオーダー10：00）<br />
+          会場：創菜Patio（2階）
+          </p>
+        </div>
+      </div>
+      <div class="switch-box_l">
+        <input type="checkbox" id="label02_1" />
+        <label for="label02_1">
+          <div class="text-header-container_l">
+            <div class="text-header-element_l"><span>館内設備</span></div>
+          </div>
+        </label>
+        <div>
+          <p>
+          ・全室Wi-Fi、LAN接続無料！<br />
+          ・ホテル内には24時間営業のコンビニエンスストア、コインランドリーもあって便利。<br />
+          ・駐車場は1泊1,800円（14：00～翌14：00）。ハイルーフ車もOK！<br />
+          （敷地内の駐車場が満車の場合、ホテル向かい側の提携駐車場を同条件でご案内しております。）<br />
+          ・シモンズ社製ベッドとロフテー社製のかたさの違う2種類の枕をご用意。快眠をご提供いたします♪<br />
+          ・ワッフル生地のパジャマは上下セパレートタイプ。<br />
+          ・未就学のお子様は無料で添寝OK！（ダブル&hellip;1名まで
+          ツイン、トリプル、フォース&hellip;2名まで）
+          </p>
+        </div>
+      </div>
+      <div class="switch-box_l">
+        <input type="checkbox" id="label02_2" />
+        <label for="label02_2">
+          <div class="text-header-container_l">
+            <div class="text-header-element_l"><span>周辺アクセス</span></div>
+          </div>
+        </label>
+        <div>
+          <p>
+          ★東京ディズニーリゾート(R)グッドネイバーホテル★<br />
+          ・宿泊者限定の無料送迎バス「グッドネイバーホテル・シャトル」が毎日運行
+          約25～40分<br />
+          （※ホテル公式HPより事前予約要、定員制）<br />
+          ・東京ディズニーリゾート(R)&hellip;りんかい線「新木場駅」乗り換え、JR「舞浜駅」へ
+          約20分<br />
+          ・東京ビッグサイト&hellip;徒歩5分<br />
+          ・お台場&hellip;ゆりかもめ「台場駅」へ4駅
+          約10分、りんかい線「東京テレポート駅」へ1駅 約5分<br />
+          ・豊洲市場&hellip;ゆりかもめ「市場前駅」へ3駅 約8分<br />
+          ・新宿、渋谷&hellip;JR埼京線直通運転りんかい線にて乗り換えなしで約25～30分<br />
+          ・東京&hellip;りんかい線「新木場駅」乗り換え、JR「東京駅」へ 約25分<br />
+          ・羽田空港まで空港リムジンバス 約40分<br />
+          ・成田空港まで空港リムジンバス 約90分
+          </p>
+        </div>
+      </div>
+      <div class="switch-box_l">
+        <input type="checkbox" id="label02_3" />
+        <label for="label02_3">
+          <div class="text-header-container_l">
+            <div class="text-header-element_l"><span>プラン注意事項</span></div>
+          </div>
+        </label>
+        <div>
+          <p>
+          ・延べ15名以上でのご予約につきましては、当館約款に基づき団体予約としての取消料規約を適用いたします。
+          </p>
+        </div>
+      </div>
+      <span style="font-size: 12px;"
+      ><strong
+      ><a
+      href="https://sotetsu-hotels.com/member?_fsi=A781mRg0"
+      target="_blank"
+      >▼SOTETSU HOTELS CLUB はこちらから▼&nbsp;</a
+      ></strong
+      >
+      <a
+      href="https://sotetsu-hotels.com/member?_fsi=xE9EepzD&amp;_fsi=xE9EepzD"
+      target="_blank"
+      ><span style="font-family: ms pgothic, osaka, sans-serif;"
+      ><img
+        height="150"
+        src="https://asp.hotel-story.ne.jp/media/2630000100148.jpg?time=71149.47"
+        style="width: 433px; height: 85px;"
+        width="864" /></span></a></span
+      >
+      </span>
+      <style type="text/css">
+        .catch_copy_container_l {
+          width:66%;
+          text-align:center;
+          color: #075a62;
+          padding:  0.25em;
+          border-top: solid 2px #0074bf;
+          border-bottom: solid 2px #0074bf;
+          background: -webkit-repeating-linear-gradient(-45deg, #e5f1f8, #e5f1f8 3px,white 3px, white 7px);
+          background: repeating-linear-gradient(-45deg, #e5f1f8, #e5f1f8 3px,white 3px, white 7px);
+        }
+        .catch_copy_container_l span {
+          color:#f14a73;
+          font-weight: bold;
+          font-size:14px
+        }
+        .switch-box_l label {
+          user-select: none;
+          cursor: pointer;
+        }
+        .switch-box_l input {
+          display: none;
+        }
+        .default-show-header_l div p {
+          font-size: 12px;
+        }
+        .switch-box_l div p {
+          display: none;
+          font-size: 12px;
+        }
+        .switch-box_l input:checked + label + div p {
+          display: inline;
+        }
+        .text-header-container_l {
+          background-color: #0074bf;
+          padding: 0;
+          width: 66%;
+          margin: 20px 0 15px 0;
+        }
+        .text-header-element_l {
+          font-weight: bold;
+          font-size: 12px;
+          padding-top: 0.5%;
+          padding-bottom: 0.5%;
+          padding-left: 2%;
+          margin-left: 2%;
+        }
+        .text-header-element_l span {
+          color:white;
+        }
+        .default-show-header_l .text-header-element_l {
+          border-color: white;
+          border-style: solid;
+          border-width: 0px 0px 0px 10px;
+          color: white;
+          background: linear-gradient(to left, white 10%, #0074bf);
+        }
+        .switch-box_l .text-header-element_l {
+          border-color: white;
+          border-style: solid;
+          border-width: 0px 0px 0px 10px;
+          color: black;
+          background: linear-gradient(to left, white 10%, #0074bf);
+        }
+        .default-show-header_l .text-header-element_l:hover {
+          opacity: 1;
+        }
+        .switch-box_l .text-header-element_l:hover {
+          opacity: 0.98;
+        }
+        .switch-box_l .text-header-element_l::before {
+          margin-right: 5%;
+          content: "▼";
+          color: white;
+        }
+        .switch-box_l input:checked ~ * .text-header-element_l::before {
+          margin-right: 5%;
+          content: "▲";
+        }
+      </style>  
