@@ -1,0 +1,84 @@
+    <div class="carousel-wrapper">
+      <span id="item-1"></span>
+      <span id="item-2"></span>
+      <span id="item-3"></span>
+      <div class="carousel-item item-1">
+        <img
+          src="https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg"
+          alt="item-1"
+        />
+        <a class="arrow arrow-prev" href="#item-3"></a>
+        <a class="arrow arrow-next" href="#item-2"></a>
+      </div>
+
+      <div class="carousel-item item-2">
+        <img
+          src="https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg"
+          alt="item-2"
+        />
+        <a class="arrow arrow-prev" href="#item-1"></a>
+        <a class="arrow arrow-next" href="#item-3"></a>
+      </div>
+
+      <div class="carousel-item item-3">
+        <img
+          src="https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg"
+          alt="item-3"
+        />
+        <a class="arrow arrow-prev" href="#item-2"></a>
+        <a class="arrow arrow-next" href="#item-1"></a>
+      </div>
+    </div>
+    <style type="text/css">
+      .carousel-wrapper {
+        height: 600px;
+        position: relative;
+        width: 100%;
+      }
+      .carousel-item {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+      }
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 12px;
+      }
+      .arrow-prev {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%) rotate(135deg);
+      }
+      .arrow-next {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+      [id^="item"] {
+        display: none;
+      }
+      .item-1 {
+        z-index: 2;
+        opacity: 1;
+      }
+      *:target ~ .item-1 {
+        opacity: 0;
+      }
+      #item-1:target ~ .item-1 {
+        opacity: 1;
+      }
+      #item-2:target ~ .item-2,
+      #item-3:target ~ .item-3 {
+        z-index: 3;
+        opacity: 1;
+      }
+    </style>
