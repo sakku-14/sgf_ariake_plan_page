@@ -1,4 +1,4 @@
-#SGF_ariake plan page assets
+# SGF_ariake plan page assets
 
 These file here is only body for html.
 
