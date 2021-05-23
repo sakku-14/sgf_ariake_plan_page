@@ -1,0 +1,18 @@
+<div class="moet_slider_wrapper">
+  <span id="moet_sli_1"></span>
+  <span id="moet_sli_2"></span>
+  <span id="moet_sli_3"></span>
+  <div class="moet_sli_item moet_sli_1">
+    <a class="moet_arrow moet_arrow_prev" href="#moet_sli_3"></a>
+    <a class="moet_arrow moet_arrow_next" href="#moet_sli_2"></a>
+  </div>
+  <div class="moet_sli_item moet_sli_2">
+    <a class="moet_arrow moet_arrow_prev" href="#moet_sli_1"></a>
+    <a class="moet_arrow moet_arrow_next" href="#moet_sli_3"></a>
+  </div>
+  <div class="moet_sli_item moet_sli_3">
+    <a class="moet_arrow moet_arrow_prev" href="#moet_sli_2"></a>
+    <a class="moet_arrow moet_arrow_next" href="#moet_sli_1"></a>
+  </div>
+</div>
+<style>.moet_slider_wrapper{height:480px;position:relative;width:100%}.moet_sli_item{position:absolute;top:0;bottom:0;left:0;right:0;padding:25px 50px;opacity:0;transition:all .5s ease-in-out}.moet_arrow{border:solid #075a62;border-width:0 3px 3px 0;display:inline-block;padding:12px}.moet_arrow_prev{position:absolute;left:0;top:50%;transform:translateY(-50%) rotate(135deg)}.moet_arrow_next{position:absolute;right:0;top:50%;transform:translateY(-50%) rotate(-45deg)}[id^="moet_sli_"]{display:none}.moet_sli_1{z-index:2;opacity:1;background:url("https://asp.hotel-story.ne.jp/media/2646000100216.jpg");background-size:contain;background-repeat:no-repeat}.moet_sli_2{background:url("https://asp.hotel-story.ne.jp/media/2646000100217.jpg");background-size:contain;background-repeat:no-repeat}.moet_sli_3{background:url("https://asp.hotel-story.ne.jp/media/2646000100218.jpg");background-size:contain;background-repeat:no-repeat}*:target ~ .moet_sli_1{opacity:0}#moet_sli_1:target ~ .moet_sli_1{opacity:1}#moet_sli_2:target ~ .moet_sli_2,#moet_sli_3:target ~ .moet_sli_3{z-index:3;opacity:1}</style>
