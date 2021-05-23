@@ -1,0 +1,23 @@
+<div class="appetizer_slider_wrapper">
+  <span id="appetizer_sli_1"></span>
+  <span id="appetizer_sli_2"></span>
+  <span id="appetizer_sli_3"></span>
+  <span id="appetizer_sli_4"></span>
+  <div class="appetizer_sli_item appetizer_sli_1">
+    <a class="appetizer_arrow appetizer_arrow_prev" href="#appetizer_sli_4"></a>
+    <a class="appetizer_arrow appetizer_arrow_next" href="#appetizer_sli_2"></a>
+  </div>
+  <div class="appetizer_sli_item appetizer_sli_2">
+    <a class="appetizer_arrow appetizer_arrow_prev" href="#appetizer_sli_1"></a>
+    <a class="appetizer_arrow appetizer_arrow_next" href="#appetizer_sli_3"></a>
+  </div>
+  <div class="appetizer_sli_item appetizer_sli_3">
+    <a class="appetizer_arrow appetizer_arrow_prev" href="#appetizer_sli_2"></a>
+    <a class="appetizer_arrow appetizer_arrow_next" href="#appetizer_sli_4"></a>
+  </div>
+  <div class="appetizer_sli_item appetizer_sli_4">
+    <a class="appetizer_arrow appetizer_arrow_prev" href="#appetizer_sli_3"></a>
+    <a class="appetizer_arrow appetizer_arrow_next" href="#appetizer_sli_1"></a>
+  </div>
+</div>
+<style>.appetizer_slider_wrapper{height:480px;position:relative;width:100%}.appetizer_sli_item{position:absolute;top:0;bottom:0;left:0;right:0;padding:25px 50px;opacity:0;transition:all .5s ease-in-out}.appetizer_arrow{border:solid #075a62;border-width:0 3px 3px 0;display:inline-block;padding:12px}.appetizer_arrow_prev{position:absolute;left:0;top:50%;transform:translateY(-50%) rotate(135deg)}.appetizer_arrow_next{position:absolute;right:0;top:50%;transform:translateY(-50%) rotate(-45deg)}[id^="appetizer_sli_"]{display:none}.appetizer_sli_1{z-index:2;opacity:1;background:url("https://asp.hotel-story.ne.jp/media/2646000100219.jpg");background-size:contain;background-repeat:no-repeat}.appetizer_sli_2{background:url("https://asp.hotel-story.ne.jp/media/2646000100220.jpg");background-size:contain;background-repeat:no-repeat}.appetizer_sli_3{background:url("https://asp.hotel-story.ne.jp/media/2646000100221.jpg");background-size:contain;background-repeat:no-repeat}.appetizer_sli_4{background:url("https://asp.hotel-story.ne.jp/media/2646000100222.jpg");background-size:contain;background-repeat:no-repeat}*:target ~ .appetizer_sli_1{opacity:0}#appetizer_sli_1:target ~ .appetizer_sli_1{opacity:1}#appetizer_sli_2:target ~ .appetizer_sli_2,#appetizer_sli_3:target ~ .appetizer_sli_3,#appetizer_sli_4:target ~ .appetizer_sli_4{z-index:4;opacity:1}</style>
